@@ -31,19 +31,41 @@
                 <a class="btn btn-default btn-sm" href="portfolio.html" role="button">Portfolio</a>
                 <a class="btn btn-default btn-sm" href="contact.html" role="button">Contact</a>
             </div>
-         </nav>
+        </nav>
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="container-fluid row">
         <!-- Contact Div -->
-        <div class="container" class="pull-left">
-            <h1>Main Content</h1>
+        <div class="container pull-left col-sm-8">
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group row">
+                    <label for="John Smit" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control col-xm-6" placeholder="John Smith">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-6">
+                        <textarea class="form-control" rows="10"></textarea>
+                    </div>
+                </div>
+            </form>
         </div>
         <!-- Sidebar Div -->
-        <div class="container" class="pull-right">
-            Sidebar
+        <div class="container col-sm-4 pull-right">
+            <h3>Connect With Me</h3>
         </div>
+    </div>
     </div>
 
     <div class="panel panel-default">
