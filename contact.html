@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -11,6 +13,9 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
+
+    <!-- My .css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
@@ -23,21 +28,22 @@
 
 <body>
     <!-- Navbar -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-default" class="row">
-            <div class="container">
-                <a class="btn btn-primary btn-lg" href="index.html" role="button">Nicholas Sladden</a>
-                <a class="btn btn-default btn-sm" href="index.html" role="button" cla>About</a>
-                <a class="btn btn-default btn-sm" href="portfolio.html" role="button">Portfolio</a>
-                <a class="btn btn-default btn-sm" href="contact.html" role="button">Contact</a>
-            </div>
-        </nav>
-    </div>
+    <nav class="navbar navbar-default" class="row">
+        <div class="container pull-left col-xs-9">
+            <a class="btn btn-primary btn-lg" href="index.html" role="button">Nicholas Sladden</a>
+        </div>
+        <div class="container pull-right col-xs-3">
+            <a class="btn btn-default btn-sm" href="index.html" role="button">About</a>
+            <a class="btn btn-default btn-sm" href="portfolio.html" role="button">Portfolio</a>
+            <a class="btn btn-default btn-sm" href="contact.html" role="button">Contact</a>
+        </div>
+    </nav>
+
 
     <!-- Main Content -->
     <div class="container row">
         <!-- Contact Div -->
-        <div class="container pull-left col-sm-12 col-m-8">
+        <div class="container pull-left col-xs-8">
             <h2>Contact</h2>
             <br></br>
             <form>
@@ -57,7 +63,7 @@
             </form>
         </div>
         <!-- Sidebar Div -->
-        <div class="container col-sm-12 col-m-4 pull-right">
+        <div class="container col-xs-4 pull-right">
             <h3>Connect With Me</h3>
             <br></br>
             <a href="#"><img src="assets/images/github-128.png" alt="GitHub" class="img-rounded" width="64"></a>
