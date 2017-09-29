@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
     line-height: 34px;
     color: #777;
@@ -9,9 +9,8 @@ body {
 /* Navbar */
 #navbar {
   position: fixed;  
-  font-family: Georgia, Times, "Times New Roman", serif;
   width: 100%;
-  margin: 0 0 30px;
+  margin: auto;
   overflow: auto;
   color: #fff;
   background: #F5FAE7;
@@ -20,12 +19,12 @@ body {
 
 #mainbtn {
   width: 500px;
+  margin-left: auto;
 }
 
 .btn-lg {
-  font-size: 30px;
+  font-size: 24px;
   height: 100px;
-  font-weight: 700;
   line-height: 75px;
   color: #fff;
   text-align: center;
@@ -33,15 +32,31 @@ body {
   border: none;
 }
 
+.btn-sm {
+  font-size: 24px;
+  height: 30px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #FFBC58;
+  border: none;
+}
+
+#navbtns {
+  
+}
+
 /* Main content */
 #maincont {
-  padding-top: 150px;
+  padding-top: 130px;
   width: 100%;
-  margin: auto;
   margin-bottom: 40px;
 }
 
 #mainbox {
+  width: 60%;
+  max-width: 650px;
+  margin-left: 100px;
   padding-bottom: 30px;
   background: #F5FAE7;
   border: 1px solid #ddd;
@@ -50,7 +65,8 @@ body {
 /* Sidebar */
 #connect {
   padding-bottom: 30px;
-  
+  width: 270px;
+  margin-right: 150px;
   background: #F5FAE7;
   border: 1px solid #ddd;
 }
@@ -61,4 +77,124 @@ body {
   position: fixed;
   background-color: #F5FAE7;
   font-size: 12px;
+}
+
+
+
+/* Media queries */
+
+
+/* FIXTHE NAVBUTTONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+BUTONS*/
+
+@media screen and (max-width: 640px) {
+  #navbar {
+    position: static;
+  }
+
+  #footer {
+    position: static;
+  }
+
+  #mainbtn {
+    width: 100%;
+  }
+
+  .btn-lg {
+   width: 100%;
+  }
+  
+  #maincont {
+    padding-top: 75px;
+   margin: auto;
+  }
+
+  #mainbox {
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #connect {
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+   #navbar {
+    position: static;
+  }
+
+  #footer {
+    position: static;
+  }
+
+  #mainbtn {
+    width: 100%;
+    height: 125px;
+    margin-bottom: 25px;
+  }
+
+  .btn-lg {
+    width: 33.33333%;
+    height: 75px;
+  }
+
+  #maincont {
+    padding-top: 75px;
+    margin: auto;
+  }
+
+  #mainbox {
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #connect {
+    float: none;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+  #navbar {
+    position: static;
+  }
+
+  #footer {
+    position: static;
+  }
+
+  #maincont {
+    padding-top: 75px;
+    margin: auto;
+  }
+
+  #mainbox {
+   
+    width: 625px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  #connect {
+  
+    width: 290px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
 }
