@@ -3,31 +3,62 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777;
-    background: url("../images/concrete_seamless.png");
+    background: url("../images/skulls.png");
 }
+
+/* Navbar */
 #navbar {
-    position: fixed;
-  z-index: 99;
+  position: fixed;  
+  font-family: Georgia, Times, "Times New Roman", serif;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
   color: #fff;
-  background: #fff;
+  background: #F5FAE7;
   border-bottom: 2px solid #ccc;
 }
 
 #mainbtn {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 90px;
+  width: 500px;
+}
+
+.btn-lg {
+  font-size: 30px;
+  height: 100px;
+  font-weight: 700;
+  line-height: 75px;
   color: #fff;
   text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
+  background: #FFBC58;
   border: none;
 }
 
+/* Main content */
+#maincont {
+  padding-top: 150px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#mainbox {
+  padding-bottom: 30px;
+  background: #F5FAE7;
+  border: 1px solid #ddd;
+}
+
+/* Sidebar */
+#connect {
+  padding-bottom: 30px;
+  
+  background: #F5FAE7;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  position: fixed;
+  background-color: #F5FAE7;
+  font-size: 12px;
+}
