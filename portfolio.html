@@ -4,17 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- My .css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <title>Portfolio Page</title>
+    <title>About Page</title>
 
 
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default row" id="navbar">
+        <div class="container col-sm-7 col-m-8">
+            <a class="btn btn-primary btn-lg pull-left" id="mainbtn" href="index.html" role="button">Nicholas Sladden</a>
+        </div>
+        <div class="container col-sm-5 col-m-4" id="navbtns">
+            <a class="btn btn-primary btn-lg pull-right" href="contact.html" role="button">Contact</a>
+            <a class="btn btn-primary btn-lg pull-right" href="portfolio.html" role="button">Portfolio</a>
+            <a class="btn btn-primary btn-lg pull-right" href="index.html" role="button">About</a>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="container row" id="maincont">
+        <!-- Contact Div -->
+        <div class="container pull-left col-m-8" id="mainbox">
+
+                <h1>Portfolio</h1>
+
+                <div class="work">
+                    <img src="assets/images/technics-q-c-640-480-1.jpg" class="img-responsive" alt="hangman">
+
+                    <h4>Hangman</h4>
+                </div>
+                <div class="work">
+                    <img src="assets/images/technics-q-c-640-480-2.jpg" class="img-responsive" alt="RPG Game">
+
+                    <h4>RPG Game</h4>
+                </div>
+                <div class="work">
+                    <img src="assets/images/technics-q-c-640-480-5.jpg" class="img-responsive" alt="Trivia Game">
+
+                    <h4>Trivia Game</h4>
+                </div>
+                <div class="work">
+                    <img src="assets/images/technics-q-c-640-480-7.jpg" class="img-responsive" alt="Rutgers Info Widget">
+
+                    <h4>Rutgers Info Widget</h4>
+                </div>
+                <div class="work">
+                    <img src="assets/images/technics-q-c-640-480-9.jpg" class="img-responsive" alt="Rock Paper Scissors">
+
+                    <h4>Rock Paper Scissors</h4>
+                </div>
+
+        </div>
+        <!-- Sidebar Div -->
+        <div class="container col-m-4 pull-right" id="connect">
+            <h2>Connect With Me</h2>
+            <a href="#"><img src="assets/images/github-128.png" alt="GitHub" class="img-rounded" width="64"></a>
+            <a href="#"><img src="assets/images/linkedin-128.png" alt="LinkedIn" class="img-rounded" width="64"></a>
+            <a href="#"><img src="assets/images/stackoverflow-128.png" alt="StackOverflow" class="img-rounded" width="64"></a>
+        </div>
+    </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-footer" id="footer">
+            <p class="text-center">Copyright &copy; 2017 Nicholas Sladden</p>
+        </div>
+    </div>
+
 
 </body>
 

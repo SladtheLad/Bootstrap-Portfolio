@@ -8,7 +8,7 @@ body {
 
 /* Navbar */
 #navbar {
-  position: fixed;  
+  position: static;  
   width: 100%;
   margin: auto;
   overflow: auto;
@@ -22,8 +22,13 @@ body {
   margin-left: auto;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 .btn-lg {
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: normal;
   height: 100px;
   line-height: 75px;
   color: #fff;
@@ -32,9 +37,14 @@ body {
   border: none;
 }
 
+#navbtns {
+  padding: 0;
+}
+
 .btn-sm {
   font-size: 24px;
-  height: 30px;
+  width: 100px;
+  height: 60px;
   line-height: 18px;
   color: #fff;
   text-align: center;
@@ -42,24 +52,41 @@ body {
   border: none;
 }
 
-#navbtns {
-  
-}
 
 /* Main content */
 #maincont {
-  padding-top: 130px;
+  padding-top: 40px;
   width: 100%;
   margin-bottom: 40px;
 }
 
 #mainbox {
   width: 60%;
-  max-width: 650px;
+  max-width: 760px;
   margin-left: 100px;
   padding-bottom: 30px;
   background: #F5FAE7;
   border: 1px solid #ddd;
+}
+
+/* About Section */
+
+p {
+  line-height: 24px;
+}
+
+/* Portfolio Section */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
 }
 
 /* Sidebar */
@@ -74,7 +101,7 @@ body {
 /* Footer */
 #footer {
   width: 100%;
-  position: fixed;
+  position: static;
   background-color: #F5FAE7;
   font-size: 12px;
 }
@@ -83,10 +110,6 @@ body {
 
 /* Media queries */
 
-
-/* FIXTHE NAVBUTTONS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-BUTONS*/
 
 @media screen and (max-width: 640px) {
   #navbar {
@@ -99,15 +122,28 @@ BUTONS*/
 
   #mainbtn {
     width: 100%;
+    font-size: 40px;
+  }
+
+  #navbtns {
+    width: 50%;
+    font-size: 20px;
   }
 
   .btn-lg {
-   width: 100%;
+    font-size: 24px;
+    height: 50px;
+    line-height: 35px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background: #FFBC58;
+    border: none;
   }
-  
+
   #maincont {
     padding-top: 75px;
-   margin: auto;
+    margin: auto;
   }
 
   #mainbox {
@@ -140,6 +176,7 @@ BUTONS*/
     width: 100%;
     height: 125px;
     margin-bottom: 25px;
+    font-size: 32px;
   }
 
   .btn-lg {
@@ -148,7 +185,9 @@ BUTONS*/
   }
 
   #maincont {
-    padding-top: 75px;
+    float: none;
+    width: 100%;
+    padding-top: 50px;
     margin: auto;
   }
 
@@ -184,14 +223,12 @@ BUTONS*/
   }
 
   #mainbox {
-   
-    width: 625px;
+    width: 600px;
     margin: auto;
     margin-bottom: 30px;
   }
 
   #connect {
-  
     width: 290px;
     margin: auto;
     margin-bottom: 30px;
