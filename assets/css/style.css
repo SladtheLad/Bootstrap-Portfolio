@@ -62,7 +62,7 @@ body {
 
 #mainbox {
   width: 60%;
-  max-width: 760px;
+  max-width: 1000px;
   margin-left: 100px;
   padding-bottom: 30px;
   background: #F5FAE7;
@@ -81,13 +81,10 @@ p {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 0 40px 0 40px;
   overflow: auto;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
-}
 
 /* Sidebar */
 #connect {
